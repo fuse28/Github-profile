@@ -1,0 +1,18 @@
+.card-container {
+  height: 195px;
+  width: 180px;
+  background-color: #ebe9e4;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.img {
+  height: 70px;
+  width: 70px;
+  margin-left: 53px;
+  margin-top: 25px;
+
+  border-radius: 50%;
+}
