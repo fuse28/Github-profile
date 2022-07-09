@@ -58,11 +58,16 @@ function Cards() {
                 {pageData.currentData().map((data) => {
                   return (
                     <div key={data.id} className="p-2 col-4 card-container">
-                      <img
-                        src={data.avatar_url}
-                        alt={data.login}
-                        className="img"
-                      ></img>
+                      {!loading ? (
+                        <h4>Wait a sec...</h4>
+                      ) : (
+                        <img
+                          src={data.avatar_url}
+                          alt={data.login}
+                          className="img"
+                        ></img>
+                      )}
+
                       <h4 className="text-center m-2">{data.login}</h4>
                       <a
                         href={data.html_url}
