@@ -75,6 +75,14 @@ function Cards() {
                 })}
               </div>
             }
+            <Pagination
+              color="primary"
+              page={page}
+              size="large"
+              count={count}
+              shape="rounded"
+              onChange={handleChange}
+            />
           </Stack>
         </div>
       )}
